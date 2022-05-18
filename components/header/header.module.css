@@ -1,0 +1,28 @@
+.header {
+  height: 3.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0 3em;
+  font-weight: 900;
+}
+
+.header div a {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  color: #00D54B;
+}
+
+.header nav a:nth-child(2) {
+  padding: .5em 1em;
+  color: white;
+  background-color: #00D54B;
+  border-radius: 400px;
+  margin-left: 1em;
+}
+/*# sourceMappingURL=header.module.css.map */

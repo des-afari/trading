@@ -1,0 +1,26 @@
+@import '../../scss/config';
+
+.header{
+    height: 3.5em;
+    @include flex(space-between, flex-end);
+    @include padding;
+    font-weight: 900;
+  
+    div{
+        a{
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            color: $green;
+        }
+    }
+
+    nav{
+
+        a:nth-child(2){
+            padding: .5em 1em;
+            color: white;
+            background-color: $green;
+            border-radius: 400px;
+            margin-left: 1em;
+        }
+    }
+}

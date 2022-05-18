@@ -1,0 +1,42 @@
+@import '../scss/config';
+
+.index{
+    height: calc(100vh - 3.5em);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include padding;
+}
+
+.indexLeft, .indexRight{
+    padding-top: 1em;
+}
+
+.indexLeft{
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        font-family: 'Space Grotesk';
+        font-size: 4rem;
+        line-height: 4rem;
+        text-shadow: 2px 2px $green;
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    a{
+        padding: .8em 3.5em;
+        background-color: $green;
+        border-radius: 400px;
+        font-size: 1rem;
+        font-family: 'Inter', 'Segoe UI', sans-serif;
+        font-weight: 700;
+        align-self: center;
+        
+    }
+}
+
+.indexRight{
+    @include flex(center, center);
+}
