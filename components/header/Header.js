@@ -11,7 +11,7 @@ const Header = () => {
             </Link>
         </div>
         <nav>
-            <Link href=''>
+            <Link href='/login'>
                 <a><small>LOG IN</small></a>
             </Link>
             <Link href='/'>

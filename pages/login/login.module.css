@@ -1,0 +1,125 @@
+.login {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.loginLeft {
+  background-color: #00D54B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loginContainer {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-weight: 900;
+}
+
+.loginRight {
+  padding: 0 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loginRight form {
+  margin-top: 3em;
+}
+
+.loginRight form button {
+  width: 50%;
+  font-size: 1rem;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-weight: 700;
+  padding: .3em .5em;
+  background-color: #00D54B;
+  color: white;
+  border: 1px solid #00D54B;
+  cursor: pointer;
+}
+
+.loginRight form button:hover {
+  background-color: #40e67a;
+}
+
+.googleLogin {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.googleLogin > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.googleLogin > div div:nth-child(1) {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 1px solid gray;
+}
+
+.googleLogin > div div:nth-child(2) {
+  padding-left: 1em;
+}
+
+.loginEmail, .loginPassword {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1em 0;
+}
+
+.loginEmail small, .loginPassword small {
+  font-weight: 900;
+}
+
+.loginEmail input, .loginPassword input {
+  font-size: 1rem;
+  font-family: 'Inter';
+  padding: .3em .5em;
+}
+/*# sourceMappingURL=login.module.css.map */

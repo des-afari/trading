@@ -1,16 +1,18 @@
 .header {
-  height: 3.5em;
+  height: 5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 3em;
   font-weight: 900;
+  background-color: #202020;
+  color: white;
 }
 
 .header div a {
@@ -24,5 +26,11 @@
   background-color: #00D54B;
   border-radius: 400px;
   margin-left: 1em;
+  -webkit-transition: background 300ms ease;
+  transition: background 300ms ease;
+}
+
+.header nav a:nth-child(2):hover {
+  background-color: #40e67a;
 }
 /*# sourceMappingURL=header.module.css.map */

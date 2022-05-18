@@ -1,10 +1,12 @@
 @import '../../scss/config';
 
 .header{
-    height: 3.5em;
-    @include flex(space-between, flex-end);
+    height: 5em;
+    @include flex(space-between, center);
     @include padding;
     font-weight: 900;
+    background-color: $black_medium;
+    color: white;
   
     div{
         a{
@@ -21,6 +23,11 @@
             background-color: $green;
             border-radius: 400px;
             margin-left: 1em;
+            transition: background 300ms ease;
+
+            &:hover{
+                background-color: $green_hover;
+            }
         }
     }
 }

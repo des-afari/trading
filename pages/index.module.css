@@ -1,15 +1,13 @@
 .index {
-  height: calc(100vh - 3.5em);
+  height: calc(100vh - 5em);
   position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   padding: 0 3em;
-}
-
-.indexLeft, .indexRight {
-  padding-top: 1em;
+  background-color: #202020;
+  color: white;
 }
 
 .indexLeft {
@@ -41,6 +39,12 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-transition: background 300ms ease;
+  transition: background 300ms ease;
+}
+
+.indexLeft a:hover {
+  background-color: #40e67a;
 }
 
 .indexRight {

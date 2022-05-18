@@ -1,17 +1,14 @@
 @import '../scss/config';
 
 .index{
-    height: calc(100vh - 3.5em);
+    height: calc(100vh - 5em);
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     @include padding;
+    background-color:$black_medium;
+    color: white;
 }
-
-.indexLeft, .indexRight{
-    padding-top: 1em;
-}
-
 .indexLeft{
     display: flex;
     flex-direction: column;
@@ -33,7 +30,11 @@
         font-family: 'Inter', 'Segoe UI', sans-serif;
         font-weight: 700;
         align-self: center;
-        
+        transition: background 300ms ease;
+
+        &:hover{
+            background-color: $green_hover;
+        }
     }
 }
 
