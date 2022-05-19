@@ -2,4 +2,56 @@
 
 .dashboard{
     height: calc(100vh - 3em);
+
+}
+
+.dashboardHead{
+    height: 25vh;
+    background-color: $black_medium;
+    @include padding;
+    color: white;
+    display: grid;
+    grid-template-rows: 75% 25%;
+}
+
+.dashboardHeadTop{
+    @include flex(flex-start, center);
+
+    h1{
+        margin: 0;
+    }
+
+    small{
+        color: $green;
+        font-weight: 700;
+    }
+}
+
+.dashboardHeadBottom{
+    @include flex(flex-end, center);
+    font-size: .9rem;
+
+    nav{
+       display: flex;
+        column-gap: 1em;
+
+        a{
+            padding: .3em 1em;
+            border-radius: 400px;
+            font-family: 'Inter';
+
+        }
+
+        a:nth-child(1){
+            border: 1px solid gray;
+        }
+
+        a:nth-child(2){
+            background-color: $green;
+        }
+
+        a:nth-child(3){
+            background-color: $red;
+        }
+    }
 }
