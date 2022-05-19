@@ -1,0 +1,61 @@
+@import '../../scss/config';
+
+.dashboardTop{
+    height: 3em;
+    border-bottom: 1px solid gray;
+    background-color: $black_medium;
+    color: white;
+    @include flex(space-between, center);
+    @include padding;
+
+    nav{
+        @include flex(center, center);
+        column-gap: 1em;
+    }
+
+    form{
+        @include flex(flex-start, center);
+        width: 35vw;
+        border: 1px solid $black_light;
+        background-color: $black_light;
+
+        input{
+            width: 100%;
+            font-size: 1rem;
+            border: 0;
+            background-color: $black_light;
+            color: white;
+            font-family: 'Inter';
+            margin-left: .3em;
+
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}
+
+.profileContainer{
+    @include flex(flex-start, center);
+    column-gap: .5em;
+}
+
+.info{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+
+    small:nth-child(2){
+        color:gray;
+    }
+}
+
+.profile{
+    div{
+        width: 36px;
+        height: 36px;
+        border-radius: 400px;
+        background-color: $green;
+    }
+}

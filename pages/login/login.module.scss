@@ -18,6 +18,7 @@
 .title{
     text-align: center;
     font-weight: 900;
+    
 }
 
 .loginRight{
@@ -47,27 +48,31 @@
 
 
 .googleLogin{
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    & > div{
-        display: grid;
-        grid-template-columns: 20% 80%;
-        border: 1px solid gray;
-        cursor: pointer;
+    height: 7vh;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    border: 1px solid #4285F4;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 
-        div:nth-child(1){
-            background-color: whitesmoke;
-            @include flex(center, center);
-            border-right: 1px solid gray;
-        }
+    div:nth-child(1){
+        @include flex(center, center);
+        border-right: 1px solid #4285F4;
+    }
 
-        div:nth-child(2){
+    div:nth-child(2){
+        display: flex;
+        align-items: center;
+        background-color: #4285F4;
+
+        h4{
+            margin: 0;
             padding-left: 1em;
+            color: white;
         }
     }
+  
 }
 
 .loginEmail, .loginPassword{

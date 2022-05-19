@@ -16,12 +16,10 @@ export default function Login(){
                     <h2 className={styles.title}>Log In</h2>
                     <div className={styles.googleLogin}>
                         <div>
-                            <div>
-                                <Image src={Google} alt='google' width='40' height='40'  />
-                            </div>
-                            <div>
-                                <h4>Sign in with google</h4>
-                            </div>
+                            <Image src={Google} alt='google' width='30' height='30' />
+                        </div>
+                        <div>
+                            <h4>Sign in with google</h4>
                         </div>
                     </div>
                     <form>

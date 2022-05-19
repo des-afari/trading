@@ -62,30 +62,18 @@
 }
 
 .googleLogin {
-  height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.googleLogin > div {
+  height: 7vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 80%;
-      grid-template-columns: 20% 80%;
-  border: 1px solid gray;
+  -ms-grid-columns: 15% 85%;
+      grid-template-columns: 15% 85%;
+  border: 1px solid #4285F4;
   cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
-.googleLogin > div div:nth-child(1) {
-  background-color: whitesmoke;
+.googleLogin div:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,11 +83,23 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-right: 1px solid gray;
+  border-right: 1px solid #4285F4;
 }
 
-.googleLogin > div div:nth-child(2) {
+.googleLogin div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #4285F4;
+}
+
+.googleLogin div:nth-child(2) h4 {
+  margin: 0;
   padding-left: 1em;
+  color: white;
 }
 
 .loginEmail, .loginPassword {
